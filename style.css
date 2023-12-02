@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+:root {
+  --primary-soft-red: hsl(7, 99%, 70%);
+  --primary-yellow: hsl(51, 100%, 49%);
+  --primary-graphic-design-text: hsl(167, 40%, 24%);
+  --primary-photography-text: hsl(198, 62%, 26%);
+  --primary-footer: hsl(168, 34%, 41%);
+
+  --neutral-clr-100: hsl(0, 0%, 100%);
+  --neutral-clr-300: hsl(210, 4%, 67%);
+  --neutral-clr-500: hsl(232, 10%, 55%);
+  --neutral-clr-600: hsl(213, 9%, 39%);
+  --neutral-clr-800: hsl(212, 27%, 19%);
+
+  --ff-barlow: "Barlow", sans-serif;
+  --fw-barlow: 600;
+  --ff-fraunces: "Fraunces", serif;
+  --fw-fraunces-700: 700;
+  --fw-fraunces-900: 900;
+}
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: var(--ff-barlow);
+}
+
+/* STYLING HEADER */
+
+header {
+  background: url(images/mobile/image-header.jpg) no-repeat bottom center/cover;
+  height: 100vh;
+  text-align: center;
+}
+
+.main-heading {
+  font-family: var(--ff-fraunces);
+  font-weight: var(--fw-fraunces-900);
+  color: var(--neutral-clr-100);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  margin: 8rem 0;
+}
+
+.arrow-down {
+  margin: 0 auto;
+}
+
+/* STYLING SHOWCASE */
+
+.showcase {
+  text-align: center;
+}
+
+.showcase section {
+  display: grid;
+  gap: 1.5rem;
+  padding: 0 1.2rem;
+  margin: 3.5rem 0;
+}
+
+.showcase section p {
+  color: var(--neutral-clr-500);
+}
+
+.showcase section a {
+  text-transform: uppercase;
+  font-family: var(--ff-fraunces);
+  font-weight: var(--fw-fraunces-900);
+  color: var(--neutral-clr-800);
+  text-decoration: none;
+}
+
+.transform a {
+  box-shadow: inset 0 -0.5em 0em hsl(51, 100%, 49%, 0.3);
+}
+.transform a:hover {
+  box-shadow: inset 0 -0.5em 0em var(--primary-yellow);
+}
+
+.stand-out a {
+  box-shadow: inset 0 -0.5em 0em hsl(7, 99%, 70%, 0.3);
+}
+
+.stand-out a:hover {
+  box-shadow: inset 0 -0.5em 0em var(--primary-soft-red);
+}
+
+/* span {
+  border-bottom: 30px solid green;
+} */
+
+h2 {
+  color: var(--neutral-clr-800);
+  font-family: var(--ff-fraunces);
+  font-weight: var(--fw-fraunces-900);
+  font-size: 2rem;
+}
