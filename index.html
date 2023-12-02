@@ -85,31 +85,41 @@
         </p>
         <span><a href="#">Learn more</a></span>
       </section>
-      <section
-        class="graphic-design"
-        style="
-          background: url(images/mobile/image-graphic-design.jpg);
-          background-repeat: no-repeat;
-        "
-      >
-        <h2>Graphic design</h2>
-        <p>
-          Great design makes you memorable. We deliver artwork that underscores
-          your brand message and captures potential clients’ attention.
-        </p>
+      <section class="graphic-design">
+        <picture>
+          <source
+            media="(min-width: 600px)"
+            srcset="images/desktop/image-graphic-design.jpg"
+          />
+          <img
+            src="images/mobile/image-graphic-design.jpg"
+            alt="graphic design"
+          />
+        </picture>
+        <div class="description-container">
+          <h2>Graphic design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
       </section>
-      <section
-        class="photography"
-        style="
-          background: url(images/mobile/image-photography.jpg);
-          background-repeat: no-repeat;
-        "
-      >
-        <h2>Photography</h2>
-        <p>
-          Increase your credibility by getting the most stunning, high-quality
-          photos that improve your business image.
-        </p>
+      <section class="photography">
+        <picture>
+          <source
+            media="(min-width: 600px)"
+            srcset="images/desktop/image-photography.jpg"
+          />
+          <img src="images/mobile/image-photography.jpg" alt="photography" />
+        </picture>
+        <div class="description-container">
+          <h2>Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
       </section>
     </main>
     <section class="testimonials">

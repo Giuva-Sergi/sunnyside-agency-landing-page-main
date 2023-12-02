@@ -19,6 +19,7 @@
   --ff-fraunces: "Fraunces", serif;
   --fw-fraunces-700: 700;
   --fw-fraunces-900: 900;
+  font-size: 18px;
 }
 /*
   1. Use a more-intuitive box-sizing model.
@@ -93,7 +94,7 @@ header {
   font-weight: var(--fw-fraunces-900);
   color: var(--neutral-clr-100);
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 1.2;
   letter-spacing: 5px;
   margin: 8rem 0;
@@ -111,16 +112,18 @@ header {
 
 .showcase section {
   display: grid;
-  gap: 1.5rem;
-  padding: 0 1.2rem;
-  margin: 3.5rem 0;
+  gap: 1.2rem;
 }
 
 .showcase section p {
   color: var(--neutral-clr-500);
+  padding: 0 1.2rem;
 }
 
 .showcase section a {
+  display: inline-block;
+  margin-bottom: 3.5rem;
+  padding: 0 0.3rem;
   text-transform: uppercase;
   font-family: var(--ff-fraunces);
   font-weight: var(--fw-fraunces-900);
@@ -131,6 +134,7 @@ header {
 .transform a {
   box-shadow: inset 0 -0.5em 0em hsl(51, 100%, 49%, 0.3);
 }
+
 .transform a:hover {
   box-shadow: inset 0 -0.5em 0em var(--primary-yellow);
 }
@@ -143,13 +147,46 @@ header {
   box-shadow: inset 0 -0.5em 0em var(--primary-soft-red);
 }
 
-/* span {
-  border-bottom: 30px solid green;
-} */
-
 h2 {
+  margin-top: 3.5rem;
+  padding: 0 1.2rem;
   color: var(--neutral-clr-800);
   font-family: var(--ff-fraunces);
   font-weight: var(--fw-fraunces-900);
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
+
+/* STYLING GRAPHIC DESIGN/PHOTOGRAPHY */
+
+.graphic-design picture,
+.graphic-design picture {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.description-container {
+  position: absolute;
+  transform: translateX(0) translateY(18rem);
+}
+
+.description-container h2 {
+  margin-bottom: 1rem;
+}
+
+.graphic-design .description-container h2,
+.graphic-design .description-container p {
+  color: var(--primary-graphic-design-text);
+}
+
+.photography .description-container h2,
+.photography .description-container p {
+  color: var(--primary-photography-text);
+}
+/* .graphic-design {
+  margin-bottom: 0;
+}
+
+.photography {
+  margin-top: 0;
+} */
